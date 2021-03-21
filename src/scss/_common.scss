@@ -1,0 +1,23 @@
+.ui {
+  &-container {
+    margin: auto;
+  }
+  &-flex {
+    display: flex;
+  }
+  &-fixed {
+    position: fixed;
+  }
+  &-relative {
+    position: relative;
+  }
+  &-inline {
+    display: inline;
+  }
+  &-inline-block {
+    display: inline-block;
+  }
+  &-justify-content-center {
+    justify-content: center;
+  }
+}

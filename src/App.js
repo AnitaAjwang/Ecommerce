@@ -1,10 +1,12 @@
 import React from 'react';
-import {Nav} from './components/index';
+import {Nav,SubNav} from './components/index';
 
 const App =()=> {
     return (
         <div>
-           <Nav/> 
+            
+           <Nav /> 
+           <SubNav />
         </div>
     )
 }
