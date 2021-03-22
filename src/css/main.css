@@ -26,6 +26,7 @@
   background: #f6f6f6;
   padding: 12px 12px;
   width: 100%;
+  z-index: 7;
 }
 .sub-nav-list {
   flex-direction: row;
@@ -39,6 +40,17 @@
   font-size: 14px;
 }
 
+#home-slider {
+  height: 100vh;
+  padding-top: 150px;
+}
+#home-slider img {
+  height: 70vh;
+  max-width: 100%;
+  vertical-align: top;
+  object-fit: contain;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -46,6 +58,11 @@
 
 body {
   font-family: "Roboto", sans-serif;
+}
+
+section {
+  min-height: 100vh;
+  padding-top: 40px;
 }
 
 a {
@@ -58,6 +75,15 @@ a:hover {
 
 li {
   list-style: none;
+}
+
+.owl-dots span {
+  width: 20px !important;
+  height: 20px !important;
+}
+.owl-dots button {
+  border: none !important;
+  outline: none !important;
 }
 
 /*# sourceMappingURL=main.css.map */

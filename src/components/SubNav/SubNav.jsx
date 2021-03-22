@@ -1,5 +1,6 @@
 import React from 'react';
 import {SubNavItems} from './SubNavItems';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 const SubNav = () => {
     return (
@@ -11,6 +12,7 @@ const SubNav = () => {
                             <a href="#">
                             {item}
                             </a>
+                            <ExpandMoreIcon />
                         </li>
 
                     ))}

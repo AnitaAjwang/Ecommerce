@@ -1,0 +1,11 @@
+//Home Slider
+#home-slider {
+  height: 100vh;
+  padding-top: 150px;
+  img {
+    height: 70vh;
+    max-width: 100%;
+    vertical-align: top;
+    object-fit: contain;
+  }
+}
