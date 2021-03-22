@@ -1,5 +1,5 @@
 import React from 'react';
-import {Nav,SubNav,HomeSlider} from './components/index';
+import {Nav,SubNav,HomeSlider,HomeCategory} from './components/index';
 
 const App =()=> {
     return (
@@ -8,6 +8,7 @@ const App =()=> {
            <Nav /> 
            <SubNav />
            <HomeSlider />
+           <HomeCategory />
         </div>
     )
 }

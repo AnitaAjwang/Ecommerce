@@ -1,11 +1,11 @@
 .sub-nav {
   &-container {
     position: fixed;
-    margin-top: 90px;
+    margin-top: 65px;
     background: $accent-dark;
     padding: 12px 12px;
     width: 100%;
-    z-index: 7;
+    z-index: 4;
   }
   &-list {
     flex-direction: row;

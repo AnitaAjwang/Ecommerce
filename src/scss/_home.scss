@@ -2,10 +2,18 @@
 #home-slider {
   height: 100vh;
   padding-top: 150px;
-  img {
+}
+.home {
+  &-slider-img {
     height: 70vh;
     max-width: 100%;
     vertical-align: top;
     object-fit: contain;
+  }
+  &-clothing-img {
+    margin: auto;
+    width: 80%;
+    height: 90%;
+    border-top-right-radius: 10px;
   }
 }

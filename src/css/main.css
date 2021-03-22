@@ -19,14 +19,20 @@
 .ui-justify-content-center {
   justify-content: center;
 }
+.ui-px-10 {
+  padding: 10px;
+}
+.ui-object-fit-contain {
+  object-fit: contain;
+}
 
 .sub-nav-container {
   position: fixed;
-  margin-top: 90px;
+  margin-top: 65px;
   background: #f6f6f6;
   padding: 12px 12px;
   width: 100%;
-  z-index: 7;
+  z-index: 4;
 }
 .sub-nav-list {
   flex-direction: row;
@@ -44,11 +50,18 @@
   height: 100vh;
   padding-top: 150px;
 }
-#home-slider img {
+
+.home-slider-img {
   height: 70vh;
   max-width: 100%;
   vertical-align: top;
   object-fit: contain;
+}
+.home-clothing-img {
+  margin: auto;
+  width: 80%;
+  height: 90%;
+  border-top-right-radius: 10px;
 }
 
 * {

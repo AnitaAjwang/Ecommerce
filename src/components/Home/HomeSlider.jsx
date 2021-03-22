@@ -2,15 +2,7 @@ import React from 'react';
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import slider1 from '../../assets/images/slider1.jpg';
-import slider2 from '../../assets/images/slider2.jpg';
-import slider4 from '../../assets/images/slider4.jpg';
-import slider5 from '../../assets/images/slider5.jpg';
-import slider6 from '../../assets/images/slider6.jpg';
-import slider7 from '../../assets/images/slider7.jpg';
-import slider8 from '../../assets/images/slider8.jpg';
-import slider9 from '../../assets/images/slider9.jpg';
-
+import {SliderItems} from './SliderItems';
 
 const HomeSlider = () => {
     const options = {
@@ -44,14 +36,9 @@ const HomeSlider = () => {
     return (
         <section id="home-slider" >
             <OwlCarousel className="owl-carousel owl-theme" {...options} >
-                <img src={slider1} alt=""/>
-                <img src={slider4} alt=""/>
-                <img src={slider5} alt=""/>
-                <img src={slider6} alt=""/>
-                <img src={slider2} alt=""/>
-                <img src={slider7} alt=""/>
-                <img src={slider8} alt=""/>
-                <img src={slider9} alt=""/>
+                {SliderItems.map(({id,img,title})=>(
+                    <img key={id} src={img} alt={title} className="home-slider-img"/>
+                ))}
             </OwlCarousel>
         </section>
     )

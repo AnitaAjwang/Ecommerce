@@ -1,24 +1,18 @@
-import Grid from '@material-ui/core';
+import {Grid} from '@material-ui/core';
+import HomeClothing from './Clothing/HomeClothing.jsx';
+import {Clothing} from '../../Data/data';
 
-const products = [
-    {id:1,
-     name:'Shoes', 
-     description:'Running Shoes'},
-    {id:2,
-     name:'Dress', 
-     description:'Slip Dress'}
-];
 const HomeCategory = () => {
     return(
-    <main>
+    <section id="home-category" className="ui-px-10">
         <Grid container justify="center" spacing={3}>
-            {products.map((product)=>(
-                <Grid item key={product.id} xs={12} sm={6} md={4} lg={3}>
-                    <Clothing/>
+            {Clothing.map((clothingItem)=>(
+                <Grid item key={clothingItem.id} xs={12} sm={6} md={4} lg={4}>
+                    <HomeClothing clothingItem = {clothingItem} />
                     </Grid>
             ))}
         </Grid>
-    </main>
+    </section>
     )
 }
 export default HomeCategory;
