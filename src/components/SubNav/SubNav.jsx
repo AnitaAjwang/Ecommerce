@@ -3,7 +3,8 @@ import {SubNavItems} from './SubNavItems';
 
 const SubNav = () => {
     return (
-        <div className="sub-nav-container">
+        <section id="subNav">
+            <div className="sub-nav-container">
             <nav className="sub-nav">
                 <ul className="ui-flex sub-nav-list">
                     {SubNavItems.map(({id,item}) => (
@@ -12,11 +13,12 @@ const SubNav = () => {
                             {item}
                             </a>
                         </li>
-
                     ))}
                 </ul>
             </nav>
         </div>
+        </section>
+
     )
 }
 

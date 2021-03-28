@@ -4,7 +4,7 @@ import {Clothing} from '../../Data/data';
 
 const HomeCategory = () => {
     return(
-    <section id="home-category" className="ui-px-10">
+    <section id="home-category">
         <Grid container justify="center" spacing={3}>
             {Clothing.map((clothingItem)=>(
                 <Grid item key={clothingItem.id} xs={12} sm={6} md={4} lg={4}>

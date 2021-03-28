@@ -102,16 +102,16 @@ const Nav = () => {
         <div>
             <AppBar position="fixed" style={{ background: '#fff' }}>
         <Toolbar>
-          <IconButton
+          {/* <IconButton
             edge="start"
             className={classes.menuButton}
             color="inherit"
             aria-label="open drawer"
           >
             <MenuIcon style={{ color: "#000" }}/>
-          </IconButton>
+          </IconButton> */}
           <Typography className={classes.title} variant="h6" noWrap style={{ color: "#000" }}>
-            Material-UI
+            My Closet
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>

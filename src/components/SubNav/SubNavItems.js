@@ -35,4 +35,8 @@ export const SubNavItems = [
         id:"9",
         item:"Jackets",
     },
+    {
+        id:"10",
+        item:"Pants",
+    },
 ]

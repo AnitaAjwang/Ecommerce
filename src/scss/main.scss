@@ -3,16 +3,17 @@
 @import "nav";
 @import "subnav";
 @import "home";
+@import "responsive";
 * {
   margin: 0;
   box-sizing: border-box;
 }
 body {
   font-family: $Roboto;
+  line-height: 1.4;
 }
-section {
+#home-category {
   min-height: 100vh;
-  padding-top: 40px;
 }
 a {
   text-decoration: none;
@@ -26,6 +27,8 @@ li {
 //Owl Carousel
 .owl {
   &-dots {
+    top: 50%;
+    transform: translateY(-120%);
     span {
       width: 20px !important;
       height: 20px !important;

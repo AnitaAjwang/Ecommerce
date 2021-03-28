@@ -7,22 +7,24 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Link from '@material-ui/core/Link';
 import Typography from '@material-ui/core/Typography';
 
-
 const HomeClothing = ({clothingItem}) => {
     const classes = useStyles();
     return (
         <div>
             <Card className={classes.root}>
+                <div className="circle-top circle-top-left">
+                    <div className="home-clothing-sale ui-letter-spacing-2"><br/> &nbsp; From*<br/><span> &nbsp; {clothingItem.sale}</span></div>
+                </div>
                 <CardActionArea>
+                <div className="home-clothing-img-wrapper">
+                        <img className="home-clothing-img" src={clothingItem.img} alt={clothingItem.img}/>
+                    </div>
                     <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5">{clothingItem.title}</Typography>
-                    <Typography gutterBottom variant="body2">{clothingItem.description}</Typography>
-                    <div className=""><Link href={clothingItem.link} color="inherit" variant="body2">{clothingItem.linkName}</Link></div>
-                    
+                    <Typography gutterBottom variant="body1">{clothingItem.description}</Typography>
+                    <div className="home-clothing-link-wrapper"><Link href={clothingItem.link} color="inherit" variant="h6">{clothingItem.linkName}</Link></div>
                     </CardContent>
-                    <CardMedia className={classes.media} image={clothingItem.img} title={clothingItem.title}/>
-                   
-                    
+                    {/* <CardMedia className={classes.media} image={clothingItem.img} title={clothingItem.title}/> */}
                 </CardActionArea>
                
 
