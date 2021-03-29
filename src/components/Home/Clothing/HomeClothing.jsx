@@ -22,7 +22,7 @@ const HomeClothing = ({clothingItem}) => {
                     <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5">{clothingItem.title}</Typography>
                     <Typography gutterBottom variant="body1">{clothingItem.description}</Typography>
-                    <div className="home-clothing-link-wrapper"><Link href={clothingItem.link} color="inherit" variant="h6">{clothingItem.linkName}</Link></div>
+                    <div className="home-clothing-link-wrapper"><a href={clothingItem.link} className="home-clothing-link">{clothingItem.linkName}</a></div>
                     </CardContent>
                     {/* <CardMedia className={classes.media} image={clothingItem.img} title={clothingItem.title}/> */}
                 </CardActionArea>

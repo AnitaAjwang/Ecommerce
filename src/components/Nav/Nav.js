@@ -118,7 +118,7 @@ const Nav = () => {
               <SearchIcon />
             </div>
             <InputBase
-              placeholder="Search…"
+              placeholder="I'm looking for…"
               classes={{
                 root: classes.inputRoot,
                 input: classes.inputInput,

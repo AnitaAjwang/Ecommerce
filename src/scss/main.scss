@@ -3,17 +3,20 @@
 @import "nav";
 @import "subnav";
 @import "home";
+@import "products";
 @import "responsive";
 * {
   margin: 0;
   box-sizing: border-box;
 }
 body {
-  font-family: $Roboto;
+  font-family: $Lato;
   line-height: 1.4;
 }
-#home-category {
+#home-category,
+#products {
   min-height: 100vh;
+  padding-top: 40px;
 }
 a {
   text-decoration: none;

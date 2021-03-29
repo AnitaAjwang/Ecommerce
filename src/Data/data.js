@@ -112,54 +112,104 @@ export const Clothing = [
     },
 ]
 
-export const Product = [
+export const ProductData = [
     {
         id:nanoid(),
-        img:'',
+        img:'assets/images/slider1.jpg',
+        title:'Hoodie set',
         description:'',
-        price:'',
+        priceCurrent:'Ksh1000',
+        priceOriginal:'Ksh1500',
+        priceDiscount:'Ksh500',
+        thrifted:'true',
     },
     {
         id:nanoid(),
-        img:'',
+        img:'assets/images/blazer.jpg',
+        title:'',
         description:'',
-        price:'',
+        priceCurrent:'',
+        priceOriginal:'',
+        priceDiscount:'',
+        thrifted:'',
     },
     {
         id:nanoid(),
-        img:'',
+        img:'assets/images/slider2.jpg',
+        title:'',
         description:'',
-        price:'',
+        priceCurrent:'',
+        priceOriginal:'',
+        priceDiscount:'',
+        thrifted:'',
     },
     {
         id:nanoid(),
-        img:'',
+        img:'assets/images/slider3.jpg',
+        title:'',
         description:'',
-        price:'',
+        priceCurrent:'',
+        priceOriginal:'',
+        priceDiscount:'',
+        thrifted:'',
     },
     {
         id:nanoid(),
-        img:'',
+        img:'assets/images/hoodie.jpg',
+        title:'',
         description:'',
-        price:'',
+        priceCurrent:'',
+        priceOriginal:'',
+        priceDiscount:'',
+        thrifted:'',
     },
     {
         id:nanoid(),
-        img:'',
+        img:'assets/images/slider4.jpg',
+        title:'',
         description:'',
-        price:'',
+        priceCurrent:'',
+        priceOriginal:'',
+        priceDiscount:'',
+        thrifted:'',
     },
     {
         id:nanoid(),
-        img:'',
+        img:'assets/images/slider5.jpg',
+        title:'',
         description:'',
-        price:'',
+        priceCurrent:'',
+        priceOriginal:'',
+        priceDiscount:'',
+        thrifted:'',
     },
     {
         id:nanoid(),
-        img:'',
+        img:'assets/images/slider6.jpg',
+        title:'',
         description:'',
-        price:'',
+        priceCurrent:'',
+        priceOriginal:'',
+        priceDiscount:'',
+        thrifted:'',
     },
 
+]
+export const DealsData =[
+    {
+        id:nanoid(),
+        dealdata:'Ksh 500'
+    },
+    {
+        id:nanoid(),
+        dealdata:'Ksh 1000'
+    },
+    {
+        id:nanoid(),
+        dealdata:'Ksh 1500'
+    },
+    {
+        id:nanoid(),
+        dealdata:'Ksh 2000'
+    }
 ]

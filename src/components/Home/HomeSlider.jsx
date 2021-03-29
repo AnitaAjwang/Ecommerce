@@ -39,7 +39,7 @@ const HomeSlider = () => {
     return (
         <section id="home-slider" className="ui-pb-50" >
             
-             <div className="home-slider-circle"></div>
+             <div className="home-slider-polygon"></div>
                 <div className="home-slider-info">
                <h2 className="home-slider-title">{title}</h2>
                 <p className="home-slider-description">{description}</p> 

@@ -3,10 +3,11 @@ $primary-color: #000;
 $secondary-color: #ffecd2;
 $accent-color: #fff;
 $accent-dark: #f6f6f6;
+$link-color: #1dacff;
 //Fonts
 $Lato: "Lato", sans-serif;
 $Roboto: "Roboto", sans-serif;
-$OpenSans: "OpenSans", sans-serif;
+$OpenSans: "Open Sans", sans-serif;
 $Lobster: "Lobster Two", sans-serif;
 //background images
 $home-image: url(../assets/images/slider1.jpg);
@@ -37,15 +38,17 @@ $home-image: url(../assets/images/slider1.jpg);
 }
 
 @mixin mediaLg {
-  @media screen and (min-width: 813px) and (max-width: 991px) {
+  @media screen and (max-width: 991px) {
     @content;
   }
 }
+
 @mixin mediaXl {
   @media screen and (min-width: 992px) and (max-width: 1170px) {
     @content;
   }
 }
+
 @mixin mediaXxl {
   @media screen and (min-width: 1171px) {
     @content;
