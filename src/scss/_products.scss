@@ -4,8 +4,11 @@
 .product {
   &-div {
     h3,
-    p {
+    h4 p {
       font-family: $Lato;
+    }
+    h3 {
+      font-size: 14px;
     }
   }
   &-img {
@@ -14,9 +17,38 @@
     height: 300px;
     object-fit: cover;
   }
+  &-title {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+    flex-wrap: wrap;
+  }
+  &-thrifted {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 2px 3px;
+    color: $accent-color;
+    align-items: center;
+    background-color: $discount-color;
+    margin-right: 3px;
+  }
   &-price-wrapper {
+    padding-top: 5px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+  &-price-current {
+    font-size: 16px;
+  }
+  &-price-original {
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
+  &-price-discount {
+    display: inline-block;
+    color: $discount-color;
+    background: $discount-background;
+    padding: 0 5px;
   }
 }

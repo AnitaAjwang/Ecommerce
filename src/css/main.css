@@ -186,8 +186,11 @@
 }
 
 .product-div h3,
-.product-div p {
+.product-div h4 p {
   font-family: "Lato", sans-serif;
+}
+.product-div h3 {
+  font-size: 14px;
 }
 .product-img {
   top: 0;
@@ -195,10 +198,39 @@
   height: 300px;
   object-fit: cover;
 }
+.product-title {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+  flex-wrap: wrap;
+}
+.product-thrifted {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 2px 3px;
+  color: #fff;
+  align-items: center;
+  background-color: #ff4747;
+  margin-right: 3px;
+}
 .product-price-wrapper {
+  padding-top: 5px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.product-price-current {
+  font-size: 16px;
+}
+.product-price-original {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.product-price-discount {
+  display: inline-block;
+  color: #ff4747;
+  background: #fff1f1;
+  padding: 0 5px;
 }
 
 @media screen and (max-width: 410px) {

@@ -19,13 +19,19 @@ const Product = ({productItem}) => {
                  </div>
 
                     <CardContent className={classes.cardContent}>
-
+            
+                        <div className="product-title">
+                        {productItem.thrifted === 'true' ? (<h5 className="product-thrifted">Thrifted</h5>):null}
                         <h3>{productItem.title}</h3><br/>
-                        <p className="product-price-current ui-letter-spacing-2"><b>{productItem.priceCurrent}</b></p>
-                        <div className="product-price-wrapper ui-letter-spacing-2">
-                            <p className="product-price-original">{productItem.priceOriginal}</p>
-                            <p className="product-price-discount">{productItem.priceDiscount}</p>
                         </div>
+                        
+                        <p className="product-price-current ui-letter-spacing-2"><b>{productItem.priceCurrent}</b></p>
+                        
+                        {productItem.priceOriginal !== '' ? (                        
+                            <div className="product-price-wrapper ui-letter-spacing-2">
+                                <p className="product-price-original">{productItem.priceOriginal}</p>
+                                <p className="product-price-discount">{productItem.priceDiscount}</p>
+                            </div>):null}
 
                     </CardContent>
                 </CardActionArea>

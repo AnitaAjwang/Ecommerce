@@ -116,11 +116,11 @@ export const ProductData = [
     {
         id:nanoid(),
         img:'assets/images/slider1.jpg',
-        title:'Hoodie set',
+        title:'Hoodie set, sweatpants set',
         description:'',
-        priceCurrent:'Ksh1000',
-        priceOriginal:'Ksh1500',
-        priceDiscount:'Ksh500',
+        priceCurrent:'Ksh1000.00',
+        priceOriginal:'Ksh1500.00',
+        priceDiscount:'33% off',
         thrifted:'true',
     },
     {
@@ -146,12 +146,12 @@ export const ProductData = [
     {
         id:nanoid(),
         img:'assets/images/slider3.jpg',
-        title:'',
+        title:'Sun, Flower, Summer Dress',
         description:'',
-        priceCurrent:'',
-        priceOriginal:'',
-        priceDiscount:'',
-        thrifted:'',
+        priceCurrent:'Ksh500.00',
+        priceOriginal:'Ksh1000.00',
+        priceDiscount:'50% off',
+        thrifted:'false',
     },
     {
         id:nanoid(),
