@@ -121,7 +121,9 @@ export const ProductData = [
         priceCurrent:'Ksh1000.00',
         priceOriginal:'Ksh1500.00',
         priceDiscount:'33% off',
-        thrifted:'true',
+        thrifted:true,
+        wishlist:false,
+        inCart:false,
     },
     {
         id:nanoid(),
@@ -131,7 +133,9 @@ export const ProductData = [
         priceCurrent:'',
         priceOriginal:'',
         priceDiscount:'',
-        thrifted:'',
+        thrifted:false,
+        wishlist:false,
+        inCart:true,
     },
     {
         id:nanoid(),
@@ -141,7 +145,9 @@ export const ProductData = [
         priceCurrent:'',
         priceOriginal:'',
         priceDiscount:'',
-        thrifted:'',
+        thrifted:true,
+        wishlist:false,
+        inCart:false,
     },
     {
         id:nanoid(),
@@ -151,7 +157,9 @@ export const ProductData = [
         priceCurrent:'Ksh500.00',
         priceOriginal:'Ksh1000.00',
         priceDiscount:'50% off',
-        thrifted:'false',
+        thrifted:true,
+        wishlist:false,
+        inCart:false,
     },
     {
         id:nanoid(),
@@ -161,7 +169,9 @@ export const ProductData = [
         priceCurrent:'',
         priceOriginal:'',
         priceDiscount:'',
-        thrifted:'',
+        thrifted:false,
+        wishlist:false,
+        inCart:false,
     },
     {
         id:nanoid(),
@@ -171,7 +181,9 @@ export const ProductData = [
         priceCurrent:'',
         priceOriginal:'',
         priceDiscount:'',
-        thrifted:'',
+        thrifted:false,
+        wishlist:false,
+        inCart:false,
     },
     {
         id:nanoid(),
@@ -181,7 +193,9 @@ export const ProductData = [
         priceCurrent:'',
         priceOriginal:'',
         priceDiscount:'',
-        thrifted:'',
+        thrifted:false,
+        wishlist:false,
+        inCart:false,
     },
     {
         id:nanoid(),
@@ -191,7 +205,9 @@ export const ProductData = [
         priceCurrent:'',
         priceOriginal:'',
         priceDiscount:'',
-        thrifted:'',
+        thrifted:false,
+        wishlist:false,
+        inCart:false,
     },
 
 ]
