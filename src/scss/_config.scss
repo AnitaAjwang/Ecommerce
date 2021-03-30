@@ -11,6 +11,7 @@ $Lato: "Lato", sans-serif;
 $Roboto: "Roboto", sans-serif;
 $OpenSans: "Open Sans", sans-serif;
 $Lobster: "Lobster Two", sans-serif;
+$NunitoSans: "Nunito Sans", sans-serif;
 //background images
 $home-image: url(../assets/images/slider1.jpg);
 @mixin easeIn {
@@ -24,7 +25,7 @@ $home-image: url(../assets/images/slider1.jpg);
 }
 //Media Query Mixins
 @mixin mediaXs {
-  @media screen and (max-width: 410px) {
+  @media screen and (max-width: 411px) {
     @content;
   }
 }

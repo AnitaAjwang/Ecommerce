@@ -1,8 +1,7 @@
 #home-slider {
   position: relative;
-  height: 90vh;
+  height: 100vh;
   display: flex;
-  margin-top: 60px;
   justify-content: space-between;
   align-items: center;
   background: $home-image;
@@ -22,7 +21,7 @@
         text-transform: uppercase;
       }
       z-index: 1;
-      margin-top: 50px;
+      margin-top: 90px;
       margin-left: 10px;
       margin-right: 10px;
       border: 2px $primary-color solid;
@@ -128,6 +127,7 @@
 
 #home-category {
   margin-left: 20px;
+  padding-top: 40px;
 }
 
 .circle {

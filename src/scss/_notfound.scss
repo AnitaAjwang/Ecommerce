@@ -1,0 +1,25 @@
+#not-found {
+  background: $link-color;
+  align-items: center;
+  justify-items: center;
+  font-family: $NunitoSans;
+  .mainbox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .not-found-div,
+  a {
+    color: $accent-color;
+  }
+  .not-found-div {
+    font-size: 11rem;
+  }
+  .msg {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}

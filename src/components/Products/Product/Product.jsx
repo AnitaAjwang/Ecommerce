@@ -3,9 +3,7 @@ import Card from '@material-ui/core/Card';
 import useStyles from './styles';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Link from '@material-ui/core/Link';
-import Typography from '@material-ui/core/Typography';
+import Link from 'react-router-dom/Link'
 
 const Product = ({productItem}) => {
     const classes = useStyles();
@@ -15,7 +13,8 @@ const Product = ({productItem}) => {
             <Card className={classes.root}>
                 <CardActionArea>
                 <div className="product-img-wrapper">
-                        <img className="product-img" src={productItem.img} alt=""/>
+
+                      <Link to="/productdetails"><img className="product-img" src={productItem.img} alt=""/></Link>  
                  </div>
 
                     <CardContent className={classes.cardContent}>
@@ -34,6 +33,9 @@ const Product = ({productItem}) => {
                             </div>):null}
 
                     </CardContent>
+                    <div className="product-button ui-text-center">
+                            <Link to="/mycart">ADD TO CART</Link>
+                            </div>
                 </CardActionArea>
             </Card>
             

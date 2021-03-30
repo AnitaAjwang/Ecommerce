@@ -4,6 +4,7 @@
 @import "subnav";
 @import "home";
 @import "products";
+@import "notfound";
 @import "responsive";
 * {
   margin: 0;
@@ -14,9 +15,13 @@ body {
   line-height: 1.4;
 }
 #home-category,
-#products {
+#products,
+#not-found {
   min-height: 100vh;
-  padding-top: 40px;
+}
+#products,
+#not-found {
+  padding-top: 120px;
 }
 a {
   text-decoration: none;
@@ -40,5 +45,12 @@ li {
       border: none !important;
       outline: none !important;
     }
+  }
+}
+
+.home-navigation {
+  padding-bottom: 20px;
+  a {
+    text-decoration: underline;
   }
 }

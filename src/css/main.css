@@ -34,9 +34,16 @@
 .ui-text-center {
   text-align: center;
 }
+.ui-text-gray-5 {
+  color: #7f7f7f;
+}
+.ui-text-black {
+  color: #000;
+}
 
 #subNav {
   padding-top: 0;
+  margin-top: 60px;
   position: fixed;
   background: #f6f6f6;
   padding: 12px 12px;
@@ -62,9 +69,8 @@
 
 #home-slider {
   position: relative;
-  height: 90vh;
+  height: 100vh;
   display: flex;
-  margin-top: 60px;
   justify-content: space-between;
   align-items: center;
   background: url(../assets/images/slider1.jpg);
@@ -76,7 +82,7 @@
 
 .home-slider-info {
   z-index: 1;
-  margin-top: 50px;
+  margin-top: 90px;
   margin-left: 10px;
   margin-right: 10px;
   border: 2px #000 solid;
@@ -162,6 +168,7 @@
 
 #home-category {
   margin-left: 20px;
+  padding-top: 40px;
 }
 
 .circle-top {
@@ -232,10 +239,43 @@
   background: #fff1f1;
   padding: 0 5px;
 }
+.product-button a {
+  display: inline-block;
+  color: #fff;
+  padding: 7px 12px;
+  background: #ff4747;
+  border-radius: 5px;
+}
 
-@media screen and (max-width: 410px) {
+#not-found {
+  background: #1dacff;
+  align-items: center;
+  justify-items: center;
+  font-family: "Nunito Sans", sans-serif;
+}
+#not-found .mainbox {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#not-found .not-found-div,
+#not-found a {
+  color: #fff;
+}
+#not-found .not-found-div {
+  font-size: 11rem;
+}
+#not-found .msg {
+  text-align: center;
+  font-size: 1.6rem;
+}
+#not-found a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 411px) {
   .sub-nav-list {
-    top: 17%;
+    top: 10%;
   }
 }
 @media screen and (max-width: 500px) {
@@ -248,6 +288,11 @@
   }
 }
 @media screen and (max-width: 991px) {
+  #home-slider {
+    margin-top: -5px;
+    height: 90vh;
+  }
+
   .sub-nav-list {
     position: fixed;
     display: flex;
@@ -269,7 +314,7 @@
     display: flex;
     font-size: 2rem;
     cursor: pointer;
-    z-index: 5;
+    z-index: 4;
   }
 
   .home-deals-circle {
@@ -282,7 +327,7 @@
 }
 @media screen and (max-width: 812px) {
   .sub-nav-list {
-    top: 12%;
+    top: 19%;
   }
 
   .home-deals-circle {
@@ -301,9 +346,14 @@ body {
 }
 
 #home-category,
-#products {
+#products,
+#not-found {
   min-height: 100vh;
-  padding-top: 40px;
+}
+
+#products,
+#not-found {
+  padding-top: 120px;
 }
 
 a {
@@ -329,6 +379,13 @@ li {
 .owl-dots button {
   border: none !important;
   outline: none !important;
+}
+
+.home-navigation {
+  padding-bottom: 20px;
+}
+.home-navigation a {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=main.css.map */

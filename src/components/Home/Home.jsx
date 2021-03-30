@@ -4,9 +4,10 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import {SliderItems} from './SliderItems';
 import {HeroMessage} from '../../Data/data';
+import {HomeCategory,HomeDeals} from '../index';
 
 
-const HomeSlider = () => {
+const Home = () => {
     const {title,description,button,buttonLink} = HeroMessage;
     const options = {
         margin: 0,
@@ -37,28 +38,29 @@ const HomeSlider = () => {
         },
     };
     return (
-        <section id="home-slider" className="ui-pb-50" >
-            
-             <div className="home-slider-polygon"></div>
+        <div className="">
+            <section id="home-slider" className="ui-pb-50" >
+                
+                <div className="home-slider-polygon"></div>
                 <div className="home-slider-info">
-               <h2 className="home-slider-title">{title}</h2>
+                <h2 className="home-slider-title">{title}</h2>
                 <p className="home-slider-description">{description}</p> 
                 <div className="home-slider-btn">
                     <a href="#" className="home-slider-link">{button}</a>
                 </div>                
-           </div>
+            </div>
         
-           {/* <OwlCarousel className="owl-carousel owl-theme" {...options} >
+            {/* <OwlCarousel className="owl-carousel owl-theme" {...options} >
                 {SliderItems.map(({id,img,title})=>(
                         <img key={id} src={img} alt={title} className="home-slider-img"/>    
                 ))}
-            </OwlCarousel>  */}
-         
-
-                
-
+            </OwlCarousel>  */}  
         </section>
+        <HomeCategory/>
+        <HomeDeals/>
+        </div>
+
     )
 }
 
-export default HomeSlider;
+export default Home;
