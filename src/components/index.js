@@ -6,3 +6,6 @@ export {default as HomeDeals} from './Home/HomeDeals.jsx';
 export {default as Products} from './Products/Products.jsx';
 export {default as NotFound} from './NotFound/NotFound.jsx';
 export {default as ProductDetails} from './Products/Product/ProductDetails.jsx';
+export {default as AddItems} from './Admin/AddItems/addItems.jsx';
+export {default as Orders} from './Admin/Orders/orders.jsx';
+export {default as Inventory} from './Admin/Inventory/inventory.jsx';

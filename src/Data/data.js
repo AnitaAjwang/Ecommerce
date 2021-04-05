@@ -229,3 +229,39 @@ export const DealsData =[
         dealdata:'Ksh 2000'
     }
 ]
+//ADD ITEMS
+export const ProductCategory=[
+    {
+        id:1,
+        category:'Accessories'
+    },
+    {
+        id:2,
+        category:'Bag'
+    },
+    {
+        id:3,
+        category:'Dress'
+    },
+    {
+        id:4,
+        category:'Top'
+    },
+    {
+        id:5,
+        category:'Skirt'
+    },
+    {
+        id:6,
+        category:'T-Shirt'
+    },
+    {
+        id:7,
+        category:'Shirt'
+    },
+    {
+        id:8,
+        category:'Active Wear'
+    },
+
+]

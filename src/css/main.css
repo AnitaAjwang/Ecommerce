@@ -294,6 +294,17 @@
   text-decoration: underline;
 }
 
+.addItems-wrapper {
+  width: 100%;
+  margin-left: 10px;
+}
+.addItems-wrapper h4 {
+  font-family: "Roboto", sans-serif;
+}
+.addItems-category {
+  margin-left: 10px;
+}
+
 @media screen and (max-width: 411px) {
   .sub-nav-list {
     top: 10%;
